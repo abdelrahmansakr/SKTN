@@ -3596,6 +3596,11 @@ tbody.collapse.in {
   right: 0;
   left: auto;
 }
+.dropdown-menu.pull-right.twitter {
+  right: 0;
+  left: auto;
+  background-color: #00C0EF;
+}
 .dropdown-menu .divider {
   height: 1px;
   margin: 9px 0;
