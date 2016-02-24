@@ -1610,6 +1610,18 @@ a:focus {
 .box.box-solid.box-info > .box-header .btn {
   color: #ffffff;
 }
+.box.box-solid.box-dark {
+  border: 1px solid #333F45;
+}
+.box.box-solid.box-dark > .box-header {
+  color: #ffffff;
+  background: #333F45;
+  background-color: #333F45;
+}
+.box.box-solid.box-dark > .box-header a,
+.box.box-solid.box-dark > .box-header .btn {
+  color: #ffffff;
+}
 .box.box-solid.box-danger {
   border: 1px solid #dd4b39;
 }
