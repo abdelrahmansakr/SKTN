@@ -18,6 +18,8 @@
     folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
 
+    <script src="javascript.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -354,6 +356,225 @@
           </ol> -->
         </section>
 
+        <div class="modal fade" id="new_ticket_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 align="center" class="modal-title" id="gridSystemModalLabel"><strong>New Ticket</strong></h4>
+              </div>
+              <div class="modal-body">
+                <div class="box-body">
+                  <form role="form">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Title</label>
+                      <input type="text" class="form-control" placeholder="Enter title ..." value="">
+                    </div>
+
+                    <!-- textarea -->
+                    <div class="form-group">
+                      <label>Description</label>
+                      <textarea class="form-control" rows="3" placeholder="Enter description ..."></textarea>
+                    </div>
+
+                    <!-- select -->
+                    <div class="form-group">
+                      <label>Status</label>
+                      <select class="form-control">
+                        <option>Open</option>
+                        <option>Pending</option>
+                        <option>Closed</option>
+                      </select>
+                    </div>
+
+                    <!-- select -->
+                    <div class="form-group">
+                      <label>Department</label>
+                      <select class="form-control">
+                        <option selected>-Select Department-</option>
+                        <option>Department 1</option>
+                        <option>Department 2</option>
+                        <option>Department 3</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Ticket Type</label>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="basic" checked="">
+                          <strong>Basic</strong> (Includes basic support from our available agents)
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="premium">
+                          <strong>Premium</strong> (Includes 24/7 advanced support from specificly chosen highly trained agents)
+                        </label>
+                      </div>
+                    </div>
+
+                    </br><div align="center" id="supervisors"></div>
+                    <p align="center"><button type="button" class="btn btn-primary" onclick="add_supervisor('new_ticket_modal');"><span class="fa fa-fw fa-plus"></span> Add Supervisor</button></p>
+
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="$(new_ticket).show();">Create Ticket</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div class="modal fade" id="create_ticket_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 align="center" class="modal-title" id="gridSystemModalLabel"><strong>New Ticket</strong></h4>
+              </div>
+              <div class="modal-body">
+                <div class="box-body">
+                  <form role="form">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Title</label>
+                      <input type="text" class="form-control" placeholder="Enter title ..." value="">
+                    </div>
+
+                    <!-- textarea -->
+                    <div class="form-group">
+                      <label>Description</label>
+                      <textarea class="form-control" rows="3" placeholder="Enter description ..." disabled="">@VodafoneEgypt Morning. Is this email address '2121feedback@vodafone.com' legit?</textarea>
+                    </div>
+
+                    <!-- select -->
+                    <div class="form-group">
+                      <label>Status</label>
+                      <select class="form-control" disabled="">
+                        <option>Open</option>
+                        <option>Pending</option>
+                        <option>Closed</option>
+                      </select>
+                    </div>
+
+                    <!-- select -->
+                    <div class="form-group">
+                      <label>Department</label>
+                      <select class="form-control">
+                        <option selected>-Select Department-</option>
+                        <option>Department 1</option>
+                        <option>Department 2</option>
+                        <option>Department 3</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Ticket Type</label>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="basic" checked="">
+                          <strong>Basic</strong> (Includes basic support from our available agents)
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="premium">
+                          <strong>Premium</strong> (Includes 24/7 advanced support from specificly chosen highly trained agents)
+                        </label>
+                      </div>
+                    </div>
+
+                    </br><div align="center" id="supervisors"></div>
+                    <p align="center"><button type="button" class="btn btn-primary" onclick="add_supervisor('create_ticket_modal');"><span class="fa fa-fw fa-plus"></span> Add Supervisor</button></p>
+
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="$(new_ticket).show();">Create Ticket</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div class="modal fade" id="edit_ticket_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 align="center" class="modal-title" id="gridSystemModalLabel"><strong>Edit Ticket</strong></h4>
+              </div>
+              <div class="modal-body">
+                <div class="box-body">
+                  <form role="form">
+                    <!-- text input -->
+                    <div class="form-group">
+                      <label>Title</label>
+                      <input type="text" class="form-control" placeholder="Enter title ..." value="Email issue">
+                    </div>
+
+                    <!-- textarea -->
+                    <div class="form-group">
+                      <label>Description</label>
+                      <textarea class="form-control" rows="3" placeholder="Enter description ...">@VodafoneEgypt Morning. Is this email address '2121feedback@vodafone.com' legit?</textarea>
+                    </div>
+
+                    <!-- select -->
+                    <div class="form-group">
+                      <label>Status</label>
+                      <select class="form-control">
+                        <option>Open</option>
+                        <option>Pending</option>
+                        <option>Closed</option>
+                      </select>
+                    </div>
+
+                    <!-- select -->
+                    <div class="form-group">
+                      <label>Department</label>
+                      <select class="form-control">
+                        <option selected>-Select Department-</option>
+                        <option>Department 1</option>
+                        <option>Department 2</option>
+                        <option>Department 3</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Ticket Type</label>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="basic" checked="">
+                          <strong>Basic</strong> (Includes basic support from our available agents)
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="premium">
+                          <strong>Premium</strong> (Includes 24/7 advanced support from specificly chosen highly trained agents)
+                        </label>
+                      </div>
+                    </div>
+
+                    </br><div align="center" id="supervisors"></div>
+                    <p align="center"><button type="button" class="btn btn-primary" onclick="add_supervisor('edit_ticket_modal');"><span class="fa fa-fw fa-plus"></span> Add Supervisor</button></p>
+
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Delete Ticket</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Edit Ticket</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
         <!-- Main content -->
         <section class="content">
           <div class="row">
@@ -368,7 +589,7 @@
                     <div class="box-header with-border">
 
                       <div class="box-tools pull-right">
-                        <button class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Ticket"><i class="fa fa-share"></i></button>
+                        <button class="btn btn-box-tool" title="" data-widget="chat-pane-toggle" data-original-title="Ticket" data-toggle="modal" data-target="#create_ticket_modal"><i class="fa fa-share"></i></button>
                         <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                       </div>
 
@@ -455,6 +676,7 @@
 
                         </ul>
 
+                        <input type="text" class="form-control" placeholder="Make a reply...">
 
                       </div>
                     </div>
@@ -465,7 +687,7 @@
                     <div class="box-header with-border">
 
                       <div class="box-tools pull-right">
-                        <button class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Ticket"><i class="fa fa-share"></i></button>
+                        <button class="btn btn-box-tool" title="" data-widget="chat-pane-toggle" data-original-title="Ticket" data-toggle="modal" data-target="#create_ticket_modal"><i class="fa fa-share"></i></button>
                         <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                       </div>
 
@@ -536,6 +758,7 @@
 
                         </ul>
 
+                        <input type="text" class="form-control" placeholder="Make a reply...">
 
                       </div>
                     </div>
@@ -549,13 +772,14 @@
                 <div class="box-header with-border">
                   <i class="fa fa-ticket"></i>
                   <h3 class="box-title">Tickets</h3>
+                  &nbsp;&nbsp;&nbsp;<a href="" data-toggle="modal" data-target="#new_ticket_modal"><span class="fa fa-fw fa-plus"></span>New Ticket</a>
                 </div><!-- /.box-header -->
                 <div class="box-body">
-                  <div class="box box-warning box-solid">
+                  <div id="new_ticket" class="box box-warning box-solid" style="display:none">
                     <div class="box-header with-border">
 
                       <div class="box-tools pull-right">
-                        <button class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Ticket"><i class="fa fa-share"></i></button>
+                        <button class="btn btn-box-tool" title="" data-widget="chat-pane-toggle" data-original-title="Ticket"><i class="fa fa-share" data-toggle="modal" data-target="#edit_ticket_modal"></i></button>
                         <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                       </div>
 <!-- 
@@ -653,6 +877,7 @@
 
                         </ul>
 
+                        <input type="text" class="form-control" placeholder="Make a reply...">
 
                       </div>
                     </div>
@@ -663,7 +888,7 @@
                     <div class="box-header with-border">
 
                       <div class="box-tools pull-right">
-                        <button class="btn btn-box-tool" data-toggle="tooltip" title="" data-widget="chat-pane-toggle" data-original-title="Ticket"><i class="fa fa-share"></i></button>
+                        <button class="btn btn-box-tool" title="" data-widget="chat-pane-toggle" data-original-title="Ticket"><i class="fa fa-share" data-toggle="modal" data-target="#edit_ticket_modal"></i></button>
                         <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                       </div>
                       <!-- 
@@ -744,6 +969,7 @@
 
                         </ul>
 
+                        <input type="text" class="form-control" placeholder="Make a reply...">
 
                       </div>
                     </div>
