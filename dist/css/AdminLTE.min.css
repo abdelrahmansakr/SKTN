@@ -4537,6 +4537,16 @@ table.text-center th {
 .chart canvas {
     width: 100%!important
 }
+.custom-modal {
+    width: 400px;
+    /*height: 200px;*/
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -200px;
+    padding: 20px;
+}
 @media print {
     .no-print,
     .main-sidebar,
