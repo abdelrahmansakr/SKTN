@@ -878,7 +878,7 @@
       <!-- Add the sidebar's background. This div must be placed
       immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
-      
+
         <footer class="main-footer">
             <div class="pull-right hidden-xs">
               <b>Version</b> 1.0
@@ -1121,78 +1121,8 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<div class="modal fade" id="edit_ticket_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 align="center" class="modal-title" id="gridSystemModalLabel"><strong>Edit Ticket</strong></h4>
-      </div>
-      <div class="modal-body">
-        <div class="box-body">
-          <form role="form">
-            <!-- text input -->
-            <div class="form-group">
-              <label>Title</label>
-              <input type="text" class="form-control" placeholder="Enter title ..." value="Email issue">
-            </div>
 
-            <!-- textarea -->
-            <div class="form-group">
-              <label>Description</label>
-              <textarea class="form-control" rows="3" placeholder="Enter description ...">@VodafoneEgypt Morning. Is this email address '2121feedback@vodafone.com' legit?</textarea>
-            </div>
 
-            <!-- select -->
-            <div class="form-group">
-              <label>Status</label>
-              <select class="form-control">
-                <option>Open</option>
-                <option>Pending</option>
-                <option>Closed</option>
-              </select>
-            </div>
-
-            <!-- select -->
-            <div class="form-group">
-              <label>Department</label>
-              <select class="form-control">
-                <option selected>-Select Department-</option>
-                <option>Department 1</option>
-                <option>Department 2</option>
-                <option>Department 3</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label>Ticket Type</label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="basic" checked="">
-                  <strong>Basic</strong> (Includes basic support from our available agents)
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="premium">
-                  <strong>Premium</strong> (Includes 24/7 advanced support from specificly chosen highly trained agents)
-                </label>
-              </div>
-            </div>
-
-          </br><div align="center" id="supervisors"></div>
-          <p align="center"><button type="button" class="btn btn-primary" onclick="add_supervisor('edit_ticket_modal');"><span class="fa fa-fw fa-plus"></span> Add Supervisor</button></p>
-
-        </form>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-danger" data-dismiss="modal">Delete Ticket</button>
-      <button type="button" class="btn btn-primary" data-dismiss="modal">Edit Ticket</button>
-    </div>
-  </div><!-- /.modal-content -->
-</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
 <!-- jQuery 2.1.4 -->
 <script src="../../plugins/jQuery/jQuery-2.1.4.min.js"></script>
