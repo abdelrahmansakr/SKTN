@@ -177,19 +177,16 @@
           <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
-          <!-- <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="#">Examples</a></li>
-            <li class="active">Blank page</li>
-          </ol> -->
-        </section>
+              <h1>
+              Administrators
+              </h1> 
+            </section>
         <!-- Main content -->
         <section class="content">
           <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
                   <li class="active"><a href="#info" data-toggle="tab">Info</a></li>
-                  <li><a href="#statistics" data-toggle="tab">Statistics</a></li>
-                  <li><a href="#add-new-agent" data-toggle="tab">Add new agent</a></li>
+                  <li><a href="#add-new-administrators" data-toggle="tab">Add new administrators</a></li>
                 </ul>
                 <div class="tab-content">
                   <div class=" active tab-pane" id="info">
@@ -229,7 +226,12 @@
                         </div>
                       </div><!-- /.box-body -->
                       <div class="box-footer clearfix">
-                        <input id="editBtn1" type="button" class="pull-right btn btn-primary" value="Edit" onclick="editAgentInfo();">
+                        <div class="col-sm-2 pull-right">
+                          <button class="btn btn-block btn-primary">Edit</button>
+                        </div>  
+                        <div class="col-sm-2 pull-right">
+                            <button class="btn btn-block btn-primary">Delete</button>
+                        </div>
                       </div>
                     </div><!-- /.box -->
                     <!-- Second Agent -->
@@ -268,7 +270,12 @@
                         </div>
                       </div><!-- /.box-body -->
                       <div class="box-footer clearfix">
-                        <input id="editBtn2" type="button" class="pull-right btn btn-primary" value="Edit" onclick="editAgentInfo();">
+                        <div class="col-sm-2 pull-right">
+                          <button class="btn btn-block btn-primary">Edit</button>
+                        </div>  
+                        <div class="col-sm-2 pull-right">
+                            <button class="btn btn-block btn-primary">Delete</button>
+                        </div>
                       </div>
                     </div><!-- /.box -->
                     <!-- Third Agent -->
@@ -307,14 +314,17 @@
                         </div>
                       </div><!-- /.box-body -->
                       <div class="box-footer clearfix">
-                        <input id="editBtn2" type="button" class="pull-right btn btn-primary" value="Edit" onclick="editAgentInfo();">
+                        <div class="col-sm-2 pull-right">
+                          <button class="btn btn-block btn-primary">Edit</button>
+                        </div>  
+                        <div class="col-sm-2 pull-right">
+                            <button class="btn btn-block btn-primary">Delete</button>
+                        </div>
                       </div>
                     </div><!-- /.box -->
                   </div><!-- /.tab-pane -->
-                  <div class="active tab-pane" id="statistics">
-                    
-                  </div><!-- /.tab-pane -->
-                  <div class="tab-pane" id="add-new-agent">
+                  
+                  <div class="tab-pane" id="add-new-administrators">
                     <form class="form-horizontal">
                       <div class="form-group">
                         <label for="inputName" class="col-sm-2 control-label">Userame</label>
@@ -366,8 +376,8 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-2 pull-right">
-                          <button type="submit" class="form-control btn btn-primary">Add new agent</button>
+                        <div class="col-sm-offset-2 col-sm-3 pull-right">
+                          <button type="submit" class="form-control btn btn-primary">Add new administrators</button>
                         </div>
                       </div>
                     </form>
