@@ -184,9 +184,82 @@
               Agents
               </h1>
             </section>
+            <!-- Modal -->
+            <div class="modal fade" id="edit-modal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Edit</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-horizontal" action="profile.html">
+                      <div class="form-group">
+                        <label for="inputName" class="col-sm-2 control-label">Userame</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputName" placeholder="Username">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputName" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputName" class="col-sm-2 control-label">Mobile number</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputName" placeholder="Mobile number">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputName" class="col-sm-2 control-label">Department</label>
+                        <div class="col-sm-5">
+                          <select class="form-control select2" style="width: 100%;">
+                            <option selected="selected">Communication</option>
+                            <option>IT</option>
+                            <option>Electronics</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-5">
+                          <button type="submit" class="btn btn-default">Add New Department</button>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputName" class="col-sm-2 control-label">Date of birth</label>
+                        <div class="col-sm-10">
+                          <input type="date" class="form-control" name="bday">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputName" class="col-sm-2 control-label">Change profile picture</label>
+                        <div class="col-sm-10">
+                          <input type="file" id="exampleInputFile">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-2 pull-right">
+                        <button type="submit" class="form-control btn btn-primary" data-dismiss="modal">Edit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
         <!-- Main content -->
         <section class="content">
-
           <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
                   <li class="active"><a href="#info" data-toggle="tab">Info</a></li>
@@ -207,35 +280,35 @@
                         <div class="row">
                               <div class="col-md-8">
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Userame</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Userame</label>
                           <p> mohamed.hamada </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Email</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Email</label>
                           <p> mohamed.hamada@guc.edu.eg </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Name</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Name</label>
                           <p> Mohamed Hamada </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Mobile number</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Mobile number</label>
                           <p> 01023764863 </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Date of birth</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Date of birth</label>
                           <p> 28/02/2016 </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Department</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Department</label>
                           <p> IT </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Total tickets</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Total tickets</label>
                           <p> 7 </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Current tickets</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Current tickets</label>
                           <p> 3/3 </p>
                         </div>
                         <div class="form-group">
@@ -257,13 +330,13 @@
                             </div>
                       </div><!-- /.box-body -->
                       <div class="box-footer clearfix">
-                            <div class="col-sm-2 pull-right">
-                              <button class="btn btn-block btn-danger"><span class="fa fa-trash-o"></span>&nbsp;Delete</button>
-                            </div>
-                            <div class="col-sm-2 pull-right">
-                              <button class="btn btn-block btn-primary"><span class="fa fa-pencil"></span>&nbsp;Edit</button>
-                            </div>  
-                          </div>
+                        <div class="col-sm-2 pull-right">
+                          <button class="btn btn-block btn-danger"><span class="fa fa-trash-o"></span>&nbsp;Delete</button>
+                        </div>
+                        <div class="col-sm-2 pull-right">
+                          <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#edit-modal"><span class="fa fa-pencil"></span>&nbsp;Edit</button>
+                        </div>  
+                      </div>
                     </div><!-- /.box -->
                     <!-- Second Agent -->
                     <div class="box box-primary collapsed-box">
@@ -278,35 +351,35 @@
                         <div class="row">
                               <div class="col-md-8">
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Userame</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Userame</label>
                           <p> ahmed.hamada </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Email</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Email</label>
                           <p> ahmed.hamada@guc.edu.eg </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Name</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Name</label>
                           <p> ahmed Hamada </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Mobile number</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Mobile number</label>
                           <p> 01023764863 </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Date of birth</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Date of birth</label>
                           <p> 28/02/2016 </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Department</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Department</label>
                           <p> Electronics </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Total tickets</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Total tickets</label>
                           <p> 35 </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Current tickets</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Current tickets</label>
                           <p> 1/3 </p>
                         </div>
                         <div class="form-group">
@@ -332,7 +405,9 @@
                               <button class="btn btn-block btn-danger"><span class="fa fa-trash-o"></span>&nbsp;Delete</button>
                             </div>
                             <div class="col-sm-2 pull-right">
-                              <button class="btn btn-block btn-primary"><span class="fa fa-pencil"></span>&nbsp;Edit</button>
+                              
+                              <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#edit-modal"><span class="fa fa-pencil"></span>&nbsp;Edit</button>
+                            
                             </div>  
                           </div>
                     </div><!-- /.box -->
@@ -349,35 +424,35 @@
                         <div class="row">
                               <div class="col-md-8">
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Userame</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Userame</label>
                           <p> hamada.hamada </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Email</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Email</label>
                           <p> hamada.hamada@guc.edu.eg </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Name</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Name</label>
                           <p> Hamada Hamada </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Mobile number</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Mobile number</label>
                           <p> 01023764863 </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Date of birth</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Date of birth</label>
                           <p> 28/02/2016 </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Department</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Department</label>
                           <p> Communiction </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Total tickets</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Total tickets</label>
                           <p> 23 </p>
                         </div>
                         <div class="form-group">
-                          <label for="inputName" class="col-sm-2 control-label">Current tickets</label>
+                          <label for="inputName" class="col-sm-2 control-label" style="width:auto;">Current tickets</label>
                           <p> 2/3 </p>
                         </div>
                         <div class="form-group">
@@ -403,7 +478,7 @@
                               <button class="btn btn-block btn-danger"><span class="fa fa-trash-o"></span>&nbsp;Delete</button>
                             </div>
                             <div class="col-sm-2 pull-right">
-                              <button class="btn btn-block btn-primary"><span class="fa fa-pencil"></span>&nbsp;Edit</button>
+                              <button class="btn btn-block btn-primary" data-toggle="modal" data-target="#edit-modal"><span class="fa fa-pencil"></span>&nbsp;Edit</button>
                             </div>  
                           </div>
                     </div><!-- /.box -->
@@ -421,6 +496,18 @@
                         <label for="inputEmail" class="col-sm-2 control-label">Email</label>
                         <div class="col-sm-10">
                           <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Confirm password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                         </div>
                       </div>
                       <div class="form-group">
@@ -455,7 +542,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="inputName" class="col-sm-2 control-label">Change profile picture</label>
+                        <label for="inputName" class="col-sm-2 control-label">Choose profile picture</label>
                         <div class="col-sm-10">
                           <input type="file" id="exampleInputFile">
                         </div>
