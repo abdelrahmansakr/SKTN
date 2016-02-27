@@ -185,19 +185,137 @@
         </section>
         <!-- Main content -->
         <section class="content">
-          <div class="box">
-            <div class="box box-widget widget-user">
-                <!-- Add the bg color to the header using any of the bg-* classes -->
-                <div class="widget-user-header" style="background-color: #333F45; color: white;">
-                  <h3 class="widget-user-username">Alexander Pierce</h3>
-                  <h5 class="widget-user-desc">Administrator</h5>
-                </div>
-                <div class="widget-user-image">
-                  <img class="img-circle" src="../../dist/img/user1-128x128.jpg" alt="User Avatar">
-                </div>
-                <div id="profile" class="box-footer text-center">
-                </br>
-                  <form class="form-horizontal" action="profile.html">
+          <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#info" data-toggle="tab">Info</a></li>
+                  <li><a href="#statistics" data-toggle="tab">Statistics</a></li>
+                  <li><a href="#add-new-agent" data-toggle="tab">Add new agent</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class=" active tab-pane" id="info">
+                    <!-- First Agent -->
+                    <div class="box box-primary collapsed-box">
+                      <div class="box-header with-border">
+                        <h3 class="box-title">mohamed.hamada&nbsp;<small> info</small></h3>
+                        <div class="box-tools pull-right">
+                          <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                          <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                        </div>
+                      </div>
+                      <div class="box-body" id="box-body1">
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Userame</label>
+                          <p> mohamed.hamada </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Email</label>
+                          <p> mohamed.hamada@guc.edu.eg </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Name</label>
+                          <p> Mohamed Hamada </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Mobile number</label>
+                          <p> 01023764863 </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Date of birth</label>
+                          <p> 28/02/2016 </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Department</label>
+                          <p> IT </p>
+                        </div>
+                      </div><!-- /.box-body -->
+                      <div class="box-footer clearfix">
+                        <input id="editBtn1" type="button" class="pull-right btn btn-primary" value="Edit" onclick="editAgentInfo();">
+                      </div>
+                    </div><!-- /.box -->
+                    <!-- Second Agent -->
+                    <div class="box box-primary collapsed-box">
+                      <div class="box-header with-border">
+                        <h3 class="box-title">ahmed.hamada&nbsp;<small> info</small></h3>
+                        <div class="box-tools pull-right">
+                          <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                          <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                        </div>
+                      </div>
+                      <div class="box-body" id="box-body2">
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Userame</label>
+                          <p> ahmed.hamada </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Email</label>
+                          <p> ahmed.hamada@guc.edu.eg </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Name</label>
+                          <p> ahmed Hamada </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Mobile number</label>
+                          <p> 01023764863 </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Date of birth</label>
+                          <p> 28/02/2016 </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Department</label>
+                          <p> Electronics </p>
+                        </div>
+                      </div><!-- /.box-body -->
+                      <div class="box-footer clearfix">
+                        <input id="editBtn2" type="button" class="pull-right btn btn-primary" value="Edit" onclick="editAgentInfo();">
+                      </div>
+                    </div><!-- /.box -->
+                    <!-- Third Agent -->
+                    <div class="box box-primary collapsed-box">
+                      <div class="box-header with-border">
+                        <h3 class="box-title">hamada.hamada&nbsp;<small> info</small></h3>
+                        <div class="box-tools pull-right">
+                          <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                          <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                        </div>
+                      </div>
+                      <div class="box-body" id="box-body3">
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Userame</label>
+                          <p> hamada.hamada </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Email</label>
+                          <p> hamada.hamada@guc.edu.eg </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Name</label>
+                          <p> Hamada Hamada </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Mobile number</label>
+                          <p> 01023764863 </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Date of birth</label>
+                          <p> 28/02/2016 </p>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputName" class="col-sm-2 control-label">Department</label>
+                          <p> Communiction </p>
+                        </div>
+                      </div><!-- /.box-body -->
+                      <div class="box-footer clearfix">
+                        <input id="editBtn2" type="button" class="pull-right btn btn-primary" value="Edit" onclick="editAgentInfo();">
+                      </div>
+                    </div><!-- /.box -->
+                  </div><!-- /.tab-pane -->
+                  <div class="active tab-pane" id="statistics">
+                    
+                  </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="add-new-agent">
+                    <form class="form-horizontal">
                       <div class="form-group">
                         <label for="inputName" class="col-sm-2 control-label">Userame</label>
                         <div class="col-sm-10">
@@ -217,7 +335,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="inputName" class="col-sm-2 control-label">Mobile number</label>
+                        <label for="inputName" class="col-sm-2 control-label">Mobile numeber</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" id="inputName" placeholder="Mobile number">
                         </div>
@@ -249,13 +367,11 @@
                       </div>
                       <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-2 pull-right">
-                          <button type="submit" class="form-control btn btn-primary">Edit</button>
+                          <button type="submit" class="form-control btn btn-primary">Add new agent</button>
                         </div>
                       </div>
-                    </form>   
-                </div>
-              </div><!-- /.widget-user -->
-          </div>
+                    </form>
+                  </div><!-- /.tab-pane -->
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
 
@@ -518,5 +634,6 @@
     <script src="../../dist/js/app.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
+    
   </body>
   </html>
