@@ -482,6 +482,130 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
+  <div class="modal fade" id="new_status_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 align="center" class="modal-title" id="gridSystemModalLabel"><strong>New Status</strong></h4>
+      </div>
+      <div class="modal-body">
+        <div class="box-body">
+          <form role="form">
+            <!-- text input -->
+
+            <!-- select -->
+            <form role="form">
+              <!-- text input -->
+              <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" placeholder="Enter title ..." value="">
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Create</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="edit_status_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 align="center" class="modal-title" id="gridSystemModalLabel"><strong>Edit Status</strong></h4>
+      </div>
+      <div class="modal-body">
+        <div class="box-body">
+          <form role="form">
+            <!-- text input -->
+
+            <!-- select -->
+            <form role="form">
+              <!-- text input -->
+              <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" placeholder="Enter new title ..." value="">
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Edit</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  
+  <div class="modal fade" id="edit_priority_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 align="center" class="modal-title" id="gridSystemModalLabel"><strong>Edit Priority</strong></h4>
+      </div>
+      <div class="modal-body">
+        <div class="box-body">
+          <form role="form">
+            <!-- text input -->
+
+            <!-- select -->
+            <form role="form">
+              <!-- text input -->
+              <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" placeholder="Enter new title ..." value="">
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Edit</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="new_priority_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 align="center" class="modal-title" id="gridSystemModalLabel"><strong>New Priority</strong></h4>
+      </div>
+      <div class="modal-body">
+        <div class="box-body">
+          <form role="form">
+            <!-- text input -->
+
+            <!-- select -->
+            <form role="form">
+              <!-- text input -->
+              <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" placeholder="Enter title ..." value="">
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal">Create</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
   <!-- Main content -->
   <section class="content">
     <div class="row">
@@ -1338,6 +1462,43 @@
                   <button type="submit" class="btn btn-success" style="padding: 1px 7px 1px 5px;">Submit</button>
                 </div>
               </div>
+            </li>
+          </ul><!-- /.control-sidebar-menu -->
+
+            <h3 class="control-sidebar-heading">Priorities</h3>
+          <ul class="control-sidebar-menu">
+            <li>
+              <ul>
+                <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_priority_modal" style="padding: 0px 1px 0px 1px;">
+                  <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
+                  <span class="fa fa-trash"></span></button></span>&nbsp;High</li>
+                <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_priority_modal" style="padding: 0px 1px 0px 1px;">
+                  <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
+                  <span class="fa fa-trash"></span></button></span>&nbsp;Medium</li>
+                <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_priority_modal" style="padding: 0px 1px 0px 1px;">
+                  <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
+                  <span class="fa fa-trash"></span></button></span>&nbsp;Low</li>
+                <li><button type="button" class="btn btn-success" data-toggle="modal" data-target="#new_priority_modal" style="padding: 0px 1px 0px 1px;">
+                  <span class="fa fa-plus"></span>
+                </button></li>
+              </ul>
+            </li>
+          </ul><!-- /.control-sidebar-menu -->
+
+          <h3 class="control-sidebar-heading">Statuses</h3>
+          <ul class="control-sidebar-menu">
+            <li>
+              <ul>
+                 <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_status_modal" style="padding: 0px 1px 0px 1px;">
+                  <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
+                  <span class="fa fa-trash"></span></button></span>&nbsp;Open</li>
+                 <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_status_modal" style="padding: 0px 1px 0px 1px;">
+                  <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
+                  <span class="fa fa-trash"></span></button></span>&nbsp;Closed</li>
+                <li><button type="button" class="btn btn-success" data-toggle="modal" data-target="#new_status_modal"  style="padding: 0px 1px 0px 1px;">
+                  <span class="fa fa-plus"></span>
+                </button></li>
+              </ul>
             </li>
           </ul><!-- /.control-sidebar-menu -->
         </form>
