@@ -51,19 +51,19 @@
               <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
                   <!-- Notifications: style can be found in dropdown.less -->
-                  <li class="dropdown notifications-menu">
+                  <li class="dropdown notifications-menu" style="width:auto;">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                       <i class="fa fa-bell-o"></i>
-                      <span class="label label-warning">10</span>
+                      <span class="label label-warning">1</span>
                     </a>
                     <ul class="dropdown-menu">
-                      <li class="header">You have 10 notifications</li>
+                      <li class="header">You have 1 notifications</li>
                       <li>
                         <!-- inner menu: contains the actual data -->
                         <ul class="menu">
                           <li>
                             <a href="#">
-                              <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                              <i class="fa fa-level-up text-red"></i> Ticket #2 has been escalated to you.
                             </a>
                           </li>
                         </ul>
@@ -513,6 +513,40 @@
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
+  <div class="modal fade" id="edit_twitter_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 align="center" class="modal-title" id="gridSystemModalLabel"><strong>Edit Twitter Settings</strong></h4>
+      </div>
+      <div class="modal-body">
+        <div class="box-body">
+          <form role="form">
+            <!-- text input -->
+
+            <!-- select -->
+            <form role="form">
+              <!-- text input -->
+              <div class="form-group">
+                <label>Access Token</label>
+                <input type="text" class="form-control" placeholder="Enter access_token ..." value="">
+
+                <label>Access Token Secret</label>
+                <input type="text" class="form-control" placeholder="Enter access_token_secret ..." value="">
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Edit</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
   <div class="modal fade" id="edit_status_modal" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
    <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -538,7 +572,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-success" data-dismiss="modal">Edit</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Edit</button>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -569,7 +603,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-success" data-dismiss="modal">Edit</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Edit</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -631,7 +665,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-success" data-dismiss="modal">Edit</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Edit</button>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
@@ -1589,7 +1623,7 @@
           <!-- Settings tab content -->
           <div class="tab-pane" id="control-sidebar-settings-tab">
             <form method="post">
-             <h3 class="control-sidebar-heading">Change Logo</h3>
+             <h3 class="control-sidebar-heading"><i class="fa fa-file-image-o"></i>&nbsp;Change Logo</h3>
              <ul class="control-sidebar-menu">
               <li>
                <div class="form-group" style="padding-left:5%;">
@@ -1597,24 +1631,24 @@
                 <div class="btn-group">
                   <input type="file" id="exampleInputFile">
                   <br>
-                  <button type="submit" class="btn btn-success" style="padding: 1px 7px 1px 5px;">Submit</button>
+                  <button type="submit" class="btn btn-success" style="padding: 1px 7px 1px 5px;">Upload</button>
                 </div>
               </div>
             </li>
           </ul><!-- /.control-sidebar-menu -->
         </form>
 
-        <h3 class="control-sidebar-heading">Departments</h3>
+        <h3 class="control-sidebar-heading"><i class="fa fa-suitcase"></i>&nbsp;Departments</h3>
         <ul class="control-sidebar-menu">
           <li>
             <ul>
-              <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_department_modal" style="padding: 0px 1px 0px 1px;">
+              <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit_department_modal" style="padding: 0px 1px 0px 1px;">
                 <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
                 <span class="fa fa-trash"></span></button></span>&nbsp;IT</li>
-                <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_department_modal" style="padding: 0px 1px 0px 1px;">
+                <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit_department_modal" style="padding: 0px 1px 0px 1px;">
                   <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
                   <span class="fa fa-trash"></span></button></span>&nbsp;Communiction</li>
-                  <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_department_modal" style="padding: 0px 1px 0px 1px;">
+                  <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit_department_modal" style="padding: 0px 1px 0px 1px;">
                     <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
                     <span class="fa fa-trash"></span></button></span>&nbsp;Electronics</li>
                     <li><button type="button" class="btn btn-success" data-toggle="modal" data-target="#new_department_modal" style="padding: 0px 1px 0px 1px;">
@@ -1624,17 +1658,17 @@
                 </li>
               </ul><!-- /.control-sidebar-menu -->
 
-              <h3 class="control-sidebar-heading">Priorities</h3>
+              <h3 class="control-sidebar-heading"><i class="fa fa-bomb"></i>&nbsp;Priorities</h3>
               <ul class="control-sidebar-menu">
                 <li>
                   <ul>
-                    <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_priority_modal" style="padding: 0px 1px 0px 1px;">
+                    <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit_priority_modal" style="padding: 0px 1px 0px 1px;">
                       <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
                       <span class="fa fa-trash"></span></button></span>&nbsp;High</li>
-                      <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_priority_modal" style="padding: 0px 1px 0px 1px;">
+                      <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit_priority_modal" style="padding: 0px 1px 0px 1px;">
                         <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
                         <span class="fa fa-trash"></span></button></span>&nbsp;Medium</li>
-                        <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_priority_modal" style="padding: 0px 1px 0px 1px;">
+                        <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit_priority_modal" style="padding: 0px 1px 0px 1px;">
                           <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
                           <span class="fa fa-trash"></span></button></span>&nbsp;Low</li>
                           <li><button type="button" class="btn btn-success" data-toggle="modal" data-target="#new_priority_modal" style="padding: 0px 1px 0px 1px;">
@@ -1644,14 +1678,14 @@
                       </li>
                     </ul><!-- /.control-sidebar-menu -->
 
-                    <h3 class="control-sidebar-heading">Statuses</h3>
+                    <h3 class="control-sidebar-heading"><i class="fa fa-info-circle"></i>&nbsp;Statuses</h3>
                     <ul class="control-sidebar-menu">
                       <li>
                         <ul>
-                         <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_status_modal" style="padding: 0px 1px 0px 1px;">
+                         <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit_status_modal" style="padding: 0px 1px 0px 1px;">
                           <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
                           <span class="fa fa-trash"></span></button></span>&nbsp;Open</li>
-                          <li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#edit_status_modal" style="padding: 0px 1px 0px 1px;">
+                          <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit_status_modal" style="padding: 0px 1px 0px 1px;">
                             <span class="fa fa-pencil-square-o"></span></button>&nbsp;<button type="button" class="btn btn-danger" style="padding: 0px 1px 0px 1px;">
                             <span class="fa fa-trash"></span></button></span>&nbsp;Closed</li>
                             <li><button type="button" class="btn btn-success" data-toggle="modal" data-target="#new_status_modal"  style="padding: 0px 1px 0px 1px;">
@@ -1661,7 +1695,7 @@
                         </li>
                       </ul><!-- /.control-sidebar-menu -->
 
-                      <h3 class="control-sidebar-heading">Premium Tickets Price</h3>
+                      <h3 class="control-sidebar-heading"><i class="fa fa-money"></i>&nbsp;Premium Tickets Price</h3>
                       <ul class="control-sidebar-menu">
                         <li>
                           <ul>
@@ -1673,10 +1707,19 @@
                           <span class="input-group-addon">EGP</span>
                           <input type="text" class="form-control" placeholder="Edit Price">
                           <span class="input-group-btn">
-                            <button class="btn btn-success btn-flat" type="submit">Save</button>
+                            <button class="btn btn-primary btn-flat" type="submit">Save</button>
                           </span>
                         </div>
                       </form>
+                    </ul><!-- /.control-sidebar-menu -->
+
+                    <h3 class="control-sidebar-heading"><i class="fa fa-twitter"></i>&nbsp;Twitter Settings</h3>
+                      <ul class="control-sidebar-menu">
+                        <div class="input-group input-group-sm" style="padding-left:10%; padding-right:5%;">
+                          <span class="input-group-btn">
+                            <button class="btn btn-info btn-flat" type="button" data-toggle="modal" data-target="#edit_twitter_modal">Edit Twitter Settings</button>
+                          </span>
+                        </div>
                     </ul><!-- /.control-sidebar-menu -->
 
                   </div><!-- /.tab-pane -->
